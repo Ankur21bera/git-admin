@@ -59,7 +59,7 @@ const Login = () => {
           <input onChange={(e)=>setEmail(e.target.value)} value={email}
             className='border border-[#dadada] rounded w-full p-2 mt-1'
             type="text"
-            placeholder='admin25@gmail.com'
+            placeholder='Enter Your Email'
             required
           />
         </div>
@@ -70,7 +70,7 @@ const Login = () => {
           <input onChange={(e)=>setPassword(e.target.value)} value={password}
             className='border border-[#dadada] rounded w-full p-2 mt-1'
             type="password"
-            placeholder='admin123'
+            placeholder='Enter Your Password'
             required
           />
         </div>
@@ -80,11 +80,10 @@ const Login = () => {
           Login
         </button>
 
-        {/* Toggle between Admin & Doctor */}
         {
           state === "Admin"
             ? <p>
-                Doctor Login ?{" "}
+                Mentor Login ?{" "}
                 <span
                   className='text-blue-500 cursor-pointer underline'
                   onClick={() => setState('Doctor')}
